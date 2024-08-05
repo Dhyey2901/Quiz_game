@@ -28,5 +28,15 @@ def game(question_data):
         print("Enter the correct options")
 
 
+def play_again():
+    while True:
+        play = input("Do you want to play again? (yes/no)").strip().lower()
+
+        if play == "no":
+            break
+        else:
+            quiz()
+
 if __name__ == '__main__':
     quiz()
+    play_again()
